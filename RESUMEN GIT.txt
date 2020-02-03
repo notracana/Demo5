@@ -1,0 +1,368 @@
+Microsoft Windows [Versión 10.0.18362.592]
+(c) 2019 Microsoft Corporation. Todos los derechos reservados.
+
+C:\Repositorios\demo1>C:\Repositorios\
+"C:\Repositorios\" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Repositorios\demo1>cd C:\Repositorios\
+
+C:\Repositorios>md demo2
+
+C:\Repositorios>cd C:\Repositorios\demo3
+El sistema no puede encontrar la ruta especificada.
+
+C:\Repositorios>cd C:\Repositorios\demo3>
+La sintaxis del comando no es correcta.
+
+C:\Repositorios>md C:\Repositorios\demo3
+
+C:\Repositorios>cd demo2
+
+C:\Repositorios\demo2>C:\>git init
+"C:\" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Repositorios\demo2>git init
+Initialized empty Git repository in C:/Repositorios/demo2/.git/
+
+C:\Repositorios\demo2>
+C:\Repositorios\demo2>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Repositorios\demo2>git add .
+
+C:\Repositorios\demo2>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Plastics_the_facts-2017-Spanish-web_13032018.pdf
+        new file:   git
+        new file:   texto hora.txt
+
+
+C:\Repositorios\demo2>git config user.email [anacarton.dlc@gmail.com]
+
+C:\Repositorios\demo2>git config user.name [Ana Carton]
+
+C:\Repositorios\demo2>git config --local -l
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+user.email=[anacarton.dlc@gmail.com]
+user.name=[Ana
+
+C:\Repositorios\demo2>git config --global -l
+core.editor="C:\Users\Ana\AppData\Local\Programs\Microsoft VS Code\Code.exe" --wait
+
+C:\Repositorios\demo2>git config --local -l
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+user.email=[anacarton.dlc@gmail.com]
+user.name=[Ana
+
+C:\Repositorios\demo2>git config user.name [AnaCarton]
+
+C:\Repositorios\demo2>git config --local -l
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+user.email=[anacarton.dlc@gmail.com]
+user.name=[AnaCarton]
+
+C:\Repositorios\demo2>git branch
+
+C:\Repositorios\demo2>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Plastics_the_facts-2017-Spanish-web_13032018.pdf
+        new file:   git
+        new file:   texto hora.txt
+
+
+C:\Repositorios\demo2>git commit -m "Initial Commit"
+[master (root-commit) d246a5b] Initial Commit
+ 3 files changed, 1 insertion(+)
+ create mode 100644 Plastics_the_facts-2017-Spanish-web_13032018.pdf
+ create mode 100644 git
+ create mode 100644 texto hora.txt
+
+C:\Repositorios\demo2>git log
+commit d246a5bce41d8c10b10d2dc60cdd3a90e605c928 (HEAD -> master)
+Author: [AnaCarton] <[anacarton.dlc@gmail.com]>
+Date:   Mon Feb 3 11:01:56 2020 +0100
+
+    Initial Commit
+
+C:\Repositorios\demo2>git tag "Version-0.0.1" d246a5
+
+C:\Repositorios\demo2>git log
+commit d246a5bce41d8c10b10d2dc60cdd3a90e605c928 (HEAD -> master, tag: Version-0.0.1)
+Author: [AnaCarton] <[anacarton.dlc@gmail.com]>
+Date:   Mon Feb 3 11:01:56 2020 +0100
+
+    Initial Commit
+
+C:\Repositorios\demo2>
+
+C:\Repositorios\demo2>cd ..
+
+para ir atrás
+
+C:\Repositorios>cd demo3
+
+C:\Repositorios\demo3>git clone https://github.com/uber/Python-Sample-Application.git
+Cloning into 'Python-Sample-Application'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (3/3), done.
+Receiving objects:  66% (158/227)sed 0 (delta 0), pack-reused 224                       (146/227)
+Receiving objects: 100% (227/227), 45.22 KiB | 701.00 KiB/s, done.
+Resolving deltas: 100% (105/105), done.
+
+C:\Repositorios\demo3>
+
+C:\Repositorios\demo4>git clone c:\Repositorios\demo2
+Cloning into 'demo2'...
+done.
+
+clonamos demo2 en demo4 a nivel local, sin servidor
+el servidor sirve para poner en común cambios, etc
+
+C:\Repositorios\demo4>dir
+ El volumen de la unidad C es Windows
+ El número de serie del volumen es: 30D3-6F6E
+
+ Directorio de C:\Repositorios\demo4
+
+03/02/2020  11:45    <DIR>          .
+03/02/2020  11:45    <DIR>          ..
+03/02/2020  11:45    <DIR>          demo2
+               0 archivos              0 bytes
+               3 dirs  27.508.195.328 bytes libres
+
+C:\Repositorios\demo4>
+C:\Repositorios\demo4>cd demo2
+
+C:\Repositorios\demo4\demo2>dir
+ El volumen de la unidad C es Windows
+ El número de serie del volumen es: 30D3-6F6E
+
+ Directorio de C:\Repositorios\demo4\demo2
+
+03/02/2020  11:45    <DIR>          .
+03/02/2020  11:45    <DIR>          ..
+03/02/2020  11:45                 0 git
+03/02/2020  11:45         8.739.579 Plastics_the_facts-2017-Spanish-web_13032018.pdf
+03/02/2020  11:45                 7 texto hora.txt
+               3 archivos      8.739.586 bytes
+               2 dirs  27.506.040.832 bytes libres
+
+C:\Repositorios\demo4\demo2>cd ..
+
+C:\Repositorios\demo4>md demo2
+Ya existe el subdirectorio o el archivo demo2.
+
+C:\Repositorios\demo4>cd demo 2
+El sistema no puede encontrar la ruta especificada.
+
+C:\Repositorios\demo4>cd demo2
+
+C:\Repositorios\demo4\demo2>cd ..
+
+C:\Repositorios\demo4>cd ..
+
+C:\Repositorios>demo2
+"demo2" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Repositorios>cd demo2
+
+C:\Repositorios\demo2>git status
+On branch master
+nothing to commit, working tree clean
+
+
+C:\Repositorios\demo2>git checkout -b "rama1"
+Switched to a new branch 'rama1'
+
+crear rama
+
+C:\Repositorios\demo2>git checkout master
+Switched to branch 'master'
+
+vuelve a rama master
+
+C:\Repositorios\demo2>git checkout -b "rama2"
+Switched to a new branch 'rama2'
+
+desde master, se crea una nueva rama
+
+C:\Repositorios\demo2>git checkout master
+Switched to branch 'master'
+
+vuelta a rama master
+
+C:\Repositorios\demo2>git branch
+* master
+  rama1
+  rama2
+
+C:\Repositorios\demo2>
+
+C:\Repositorios\demo2>git checkout rama1
+Switched to branch 'rama1'
+
+C:\Repositorios\demo2>git commit -a -m "commit en rama 1"
+[rama1 37f0ac6] commit en rama 1
+ 1 file changed, 1 insertion(+)
+
+
+a él le sale 1 cambiado, 2 inserciones y 1 borrado pero dice que esto es más lógico/coherente
+
+C:\Repositorios\demo2>
+en rama 1, tras modificar el fichero de texto, se hace commit pero, como hay que añadir los ficheros, se hace -a -m en vez de git add. y luego commit
+
+ al cambiar de rama, puede que haya que configurar de nuevo en local porque antes configuramos en loval desde la master
+
+cambiamos a rama 2 y borramos pdf
+
+C:\Repositorios\demo2>git checkout rama2
+Switched to branch 'rama2'
+
+C:\Repositorios\demo2>del *.pdf
+
+y desaparece el pdf
+
+
+C:\Repositorios\demo2>git commit -a -m "commit en rama 2"
+[rama2 d009a75] commit en rama 2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 Plastics_the_facts-2017-Spanish-web_13032018.pdf
+
+así hacemos commit después de añadir los ficheros y se borran
+
+para comprobar los cambios enre las ramas, de rama 2 nos vamos a la rama1 
+
+C:\Repositorios\demo2>git checkout rama1
+Switched to branch 'rama1'
+
+y vemos que tiene el pdf, a diferencia de la rama2, y el texto con la hora de rama1
+
+
+C:\Repositorios\demo2>git checkout master
+
+Switched to branch 'master'
+
+en máster, aparece el pdf y el texto original solo con la hora
+
+C:\Repositorios\demo2>
+
+para fusionar commits, hacemos git merge, aunque mantiene toda la rama y los commits por donde ha pasado la rama1, por lo que se podría volver a los commits hechos
+y las ramas que salan de la rama 1 puede seguir por su cuenta
+
+git rebase elimina los commits hechos, porque coge el último y lo incorpora donde le toque por tiempo
+
+
+antes de fusionar, hay que analizar los conflictos que haya en la fusión
+
+git diff da listado de conflictos
+
+C:\Repositorios\demo2>git diff rama1 rama2
+diff --git a/Plastics_the_facts-2017-Spanish-web_13032018.pdf b/Plastics_the_facts-2017-Spanish-web_13032018.pdf
+deleted file mode 100644
+index 07fe2c3..0000000
+--- a/Plastics_the_facts-2017-Spanish-web_13032018.pdf
++++ /dev/null
+
+compara los cambios entre rama1 y rama2. encuentra diferencias pero no tiene por qué ser conflictos
+
+si las diferencias son buenas y no hay problemas, se hace el merge para fusionar 
+siempre fusionamos la rama activa, hay que fusionar desde la rama destino (en este caso, master)
+C:\Repositorios\demo2>git checkout master
+Switched to branch 'master'
+
+C:\Repositorios\demo2>git merge rama1
+Updating d246a5b..37f0ac6
+Fast-forward
+ texto hora.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+se indica, en git merge, la rama que se quiere fusionar, en este caso la rama1
+
+abrimos el fichero a ver qué tiene y vemos que el texto se ha fusionado y lo de "rama1" aparece
+
+ahora vamos a rama 2 y vamos a añadir ficheros; no hay pdf y en el texto dejamos una línea en blanco y añadimos "rama2"
+
+añadimos 4 ficheros en demo2
+y hacemos commit en rama2
+
+C:\Repositorios\demo2>git commit -a -m "segundo commit rama2"
+[rama2 fbda762] segundo commit rama2
+ 1 file changed, 2 insertions(+)
+
+C:\Repositorios\demo2>git status
+On branch rama2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        "Resguardo provisional del t\303\255tulo (1).pdf"
+        dni 1.pdf
+        dni 2.pdf
+        teatro.pdf
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Repositorios\demo2>git add .
+
+C:\Repositorios\demo2>git commit -m "segundo commit rama2"
+[rama2 38cd74e] segundo commit rama2
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 "Resguardo provisional del t\303\255tulo (1).pdf"
+ create mode 100644 dni 1.pdf
+ create mode 100644 dni 2.pdf
+ create mode 100644 teatro.pdf
+
+NO ME HA FUNCIONADO LO DEL -A , ASÍ QUE AÑADIMOS CON GIT ADD .
+
+al cambiar fde rama a la master, desaparecenm los añadidos a la rama2
+
+volvemos a la rama2 y aparecen todos
+
+pintamos las diferencias entre ambas con git diff
+
+ahora fusionamos los commits, desde la master (la de destino) pero con REBASE elimina la rama tras añadir los commits y se pierde todo el resto, no es lo mismo que MERGE
+que mantendría la rama
+
+con merge, lo último de la rama 1 es lo que se añade a la head de la master, pero los commits anteriores no se pierden, se pueden recuperar
+en rebase, coge el último commit y a aprtir de ahí cambia todo, se pierde todo lo anterior. el commit se añade en el tiempo que le corresponde
+
+te sale un conflicto y, al abrir el texto, te aparece el conflicto. hay que elegir lo que te quieres quedar
+se borra en el propio texto lo que no te quieres quedar, es muy manual, y se graba
+
+
+
